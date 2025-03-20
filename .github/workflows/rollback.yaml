@@ -1,0 +1,16 @@
+name: Rollback on Failure
+
+on:
+  workflow_run:
+    workflows: ["Deploy LLM to AKS"]
+    types:
+      - completed
+
+jobs:
+  rollback:
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rollback Deployment
+        run: |
+          kubectl rollout undo deployment llm-app
