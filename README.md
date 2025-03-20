@@ -124,9 +124,11 @@ http://localhost:3000
 ```
 ## Monitoring 
 Grafana
+
 ![Screenshot (748)](https://github.com/user-attachments/assets/7c4c5a33-ec74-4437-afa5-4780c344f8e1)
 
 prometheus
+
 ![Screenshot (749)](https://github.com/user-attachments/assets/81822635-a35a-4850-a1e1-bc5bcdfb95f8)
 
 
