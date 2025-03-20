@@ -1,0 +1,13 @@
+{
+    "dashboard": {
+      "title": "LLM Deployment Metrics",
+      "panels": [
+        {
+          "title": "Request Latency",
+          "type": "graph",
+          "targets": [{ "expr": "http_request_duration_seconds" }]
+        }
+      ]
+    }
+  }
+  
